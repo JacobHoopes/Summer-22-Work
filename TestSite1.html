@@ -1,0 +1,49 @@
+<!doctype html>
+<html>
+<head>
+<title>
+Site
+</title>
+</head>
+
+<body>
+    <h1><i>Conversions</i></h1>
+    <!--subject lines are old hat, the body's where the real substance's at-->
+    <form>
+        <input type="number" id="temp" name="temp" placeholder="0"><br>
+
+        <button onClick="CtoF(document.getElementById('temp').value)">
+            convert from <strong>Celcius to Fahrenheit</strong>
+        </button><br>
+        <button onClick="FtoC(document.getElementById('temp').value)">
+            convert from <strong>Fahrenheit to Celcius</strong>
+        </button>
+    </form>
+    <script>
+        function CtoF(temp) {
+            var T = temp * 1.8 + 32;
+            alert(T);
+        }
+        function FtoC(temp) {
+            var T = (temp-32)/1.8;
+            alert(T);
+        }
+    </script>
+    <main>
+
+    </main>
+    <!--
+    a: <input type="number" name="a" id="a"><br>
+    b: <input type="number" name="b" id="b"><br>
+    <button onclick="add(document.getElementById('a').value, document.getElementById('b').value)">Add</button>
+
+    <script>
+        function add(a,b) {
+            var sum = parseInt(a)+parseInt(b);
+            alert(sum);
+        }
+    </script>
+-->
+</body>
+
+</html>
